@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mn Amin l Arij</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading">
+    <div class="loader__sky"></div>
+    <p>Loading the sky...</p>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <div class="sky" aria-hidden="true">
+    <div class="stars stars--small"></div>
+    <div class="stars stars--medium"></div>
+    <div class="stars stars--large"></div>
+    <div class="particles"></div>
+    <span class="shooting shooting--one"></span>
+    <span class="shooting shooting--two"></span>
+    <span class="shooting shooting--three"></span>
+  </div>
+
+  <button class="music" id="musicButton" type="button" aria-pressed="false">
+    <span class="music__icon">♪</span>
+    <span id="musicText">Play piano</span>
+  </button>
+
+  <main>
+    <section class="section hero" id="hero">
+      <div class="hero__content reveal">
+        <p class="kicker">From Amin to Arij</p>
+        <h1>Mn Amin <span>❤️</span> l Arij</h1>
+        <p class="subtitle">
+          Hedhi mouch juste page web...<br>
+          Hedhi kelmet men 9albi.
+        </p>
+        <a class="glow-button" href="#letter">I9ra eli fi 9albi</a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"></div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal">
+        <p class="kicker">Written slowly</p>
+        <h2>Risala</h2>
+      </div>
+      <article class="letter-card reveal" aria-label="Letter from Amin to Arij">
+        <div class="paper-fold"></div>
+        <h3>Risala</h3>
+        <pre id="letterText" aria-live="polite"></pre>
+      </article>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="section-heading reveal">
+        <p class="kicker">The quiet reasons</p>
+        <h2>3lech enti?</h2>
+      </div>
+      <div class="card-grid">
+        <article class="glass-card tilt reveal">
+          <span>01</span>
+          <p>M3ak ma n7essch elli lazemni nmask.</p>
+        </article>
+        <article class="glass-card tilt reveal">
+          <span>02</span>
+          <p>Message mennek ynajem ybaddel nhari kemel.</p>
+        </article>
+        <article class="glass-card tilt reveal">
+          <span>03</span>
+          <p>Mouch nheb nahki m3ak bark...<br><br>nheb na3mel m3ak dhikrayet.</p>
+        </article>
+        <article class="glass-card tilt reveal">
+          <span>04</span>
+          <p>Ba3d wa9t fhemt...<br><br>elli enti heya elli kont nestanna fiha.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section moments" id="moments">
+      <div class="section-heading reveal">
+        <p class="kicker">Little moments</p>
+        <h2>Hajet sghar, ama ba9yin.</h2>
+      </div>
+      <div class="timeline reveal" aria-label="Little moments timeline">
+        <div class="timeline__line"></div>
+        <article class="timeline__item">
+          <span></span>
+          <p>Awel message</p>
+        </article>
+        <article class="timeline__item">
+          <span></span>
+          <p>Awel d7ka</p>
+        </article>
+        <article class="timeline__item">
+          <span></span>
+          <p>Kol notification mennek</p>
+        </article>
+        <article class="timeline__item">
+          <span></span>
+          <p>Kol mara nestanna reply</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section final-question" id="answer">
+      <div class="final-card reveal">
+        <p class="kicker">No pressure</p>
+        <h2>Fama sou2el wahed bark...</h2>
+        <p class="question">
+          T7eb ta3tini forsa<br>
+          bech nwarik chkoun Amin bel 7a9?
+        </p>
+        <button class="glow-button glow-button--soft" id="answerButton" type="button">❤️ Nheb njawebk</button>
+        <p class="respect">
+          Ken jawbek la,<br>
+          walla ken t7eb tkhalina kif ma na7na,<br>
+          n7tarem rayek kamel.<br><br>
+          Chokran 3la wa9tek...<br>
+          w 3la ennk 9rit kelmi.
+        </p>
+        <p class="reply" id="reply" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ by Amin
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
